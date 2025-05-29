@@ -60,7 +60,7 @@ body{
 
 
 #with-background{
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('public/azerb-culture.jpg');
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('public/azerbaijan-culture.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
