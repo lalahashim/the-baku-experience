@@ -55,7 +55,7 @@
             <p>Step back in time and explore the ancient streets of Icherisheher, Baku’s historic old town.</p>
             <p><strong>Duration:</strong> 3 hours</p>
             <p><strong>Price:</strong> from $30</p>
-            <button>More Details</button>
+            <button onclick="openModal('oldCity')">More Details</button>
         </div>
 
         <div class="tour-card">
@@ -64,7 +64,7 @@
             <p>Discover the vibrant new face of Baku with visits to Flame Towers, Heydar Aliyev Center, and more.</p>
             <p><strong>Duration:</strong> Half-day</p>
             <p><strong>Price:</strong> from $40</p>
-            <button>More Details</button>
+            <button onclick="openModal('modernBaku')">More Details</button>
         </div>
 
         <div class="tour-card">
@@ -73,7 +73,7 @@
             <p>Explore ancient petroglyphs and experience the surreal beauty of bubbling mud volcanoes just outside Baku.</p>
             <p><strong>Duration:</strong> 5 hours</p>
             <p><strong>Price:</strong> from $45</p>
-            <button>More Details</button>
+            <button onclick="openModal('gobustan')">More Details</button>
         </div>
 
         <div class="tour-card">
@@ -82,7 +82,7 @@
             <p>Taste traditional Azerbaijani dishes like plov, dolma, and qutab while exploring local markets and cafés.</p>
             <p><strong>Duration:</strong> 4 hours</p>
             <p><strong>Price:</strong> from $50</p>
-            <button>More Details</button>
+            <button onclick="openModal('culinary')">More Details</button>
         </div>
 
         <div class="tour-card">
@@ -91,7 +91,7 @@
             <p>Visit the Ateshgah Fire Temple, Yanar Dag (burning mountain), and other historic wonders of Absheron.</p>
             <p><strong>Duration:</strong> Half-day</p>
             <p><strong>Price:</strong> from $40</p>
-            <button>More Details</button>
+            <button onclick="openModal('absheron')">More Details</button>
         </div>
 
         <div class="tour-card">
@@ -100,7 +100,17 @@
             <p>Discover the magic of Baku illuminated at night — stroll through the Old City, the Boulevard, and Flame Towers light show.</p>
             <p><strong>Duration:</strong> 3 hours</p>
             <p><strong>Price:</strong> from $35</p>
-            <button>More Details</button>
+            <button onclick="openModal('nightTour')">More Details</button>
+        </div>
+    </section>
+
+    <section id="tourModals">
+        <div id="tourModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalText"></p>
+            </div>
         </div>
     </section>
 
