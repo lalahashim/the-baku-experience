@@ -1,0 +1,214 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Old Standard TT";
+  background-color: #f9f9f9;
+}
+
+#navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.logo{
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  font-size: 20px;
+  padding:0;
+}
+.navigation a{
+  text-decoration: none;
+  color: white;
+}
+.navigation li{
+  list-style: none;
+}
+#logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+
+#footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 30px auto 0 auto;
+  padding: 0;
+}
+.text-logo{
+  display: flex;
+  align-items: center;
+}
+.social-media{
+  display: flex;
+  gap: 10px;
+}
+
+
+#with-background{
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('public/carpet3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#our-story {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
+  padding: 40px;
+}
+#our-story h2{
+  font-size: 30px;
+}
+
+#our-mission{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 40px auto;
+}
+#our-mission img{
+  border-radius: 10px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.mission-text h2{
+  font-size: 25px;
+  color: #424874;
+}
+.mission-text p{
+  font-size: 18px;
+}
+
+#why-us{
+  width: 80%;
+  margin: 50px auto;
+}
+#why-us h2{
+  color: #424874;
+  text-align: center;
+}
+.reason-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.card{
+  width: 20%;
+  border: 1px solid #424874;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card:hover{
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.head{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0;
+}
+.head h3{
+  color: #424874;
+  margin: 0;
+}
+.card p{
+  margin: 0;
+}
+
+
+#call-to-action {
+  text-align: center;
+  margin: 50px 0;
+  color: #424874;
+}
+#call-to-action .btn {
+  padding: 12px 24px;
+  background-color: #f9f9f9;
+  border: 1px solid #424874;
+  color: #424874;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+#call-to-action .btn:hover {
+  border-color: #A6B1E1;
+  color: #A6B1E1;
+}
+
+
+
+#phone-nav{
+  display: none;
+}
+
+
+@media (max-width: 750px) {
+  #navigation{
+    display: none;
+  }
+  #phone-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  #pnone-nav li{
+    list-style: none;
+    font-size: 13px;
+  }
+  #phone-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  #phone-nav a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  #our-mission{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 40px auto;
+    flex-wrap: wrap;
+  }
+  #our-mission img{
+    width: 330px;
+  }
+
+  .reason-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .card{
+    width: 400px;
+  }
+}

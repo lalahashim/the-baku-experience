@@ -1,0 +1,245 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Old Standard TT";
+  background-color: #f9f9f9;
+}
+
+#navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.logo{
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  font-size: 20px;
+  padding: 0;
+}
+.navigation a{
+  text-decoration: none;
+  color: white;
+}
+.navigation li{
+  list-style: none;
+}
+#logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+
+#footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 30px auto 0 auto;
+  padding: 0;
+}
+.text-logo{
+  display: flex;
+  align-items: center;
+}
+.social-media{
+  display: flex;
+  gap: 10px;
+}
+
+
+#with-background{
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('public/carpet.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+#head{
+  color: white;
+  margin: 30px auto;
+  padding: 20px;
+  width: 80%;
+  font-size: 20px;
+}
+#head h1{
+  font-size: 30px;
+}
+
+#contact-info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 75%;
+  margin: 50px auto;
+  gap: 20px;
+}
+#contact-info img{
+  width: 47%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.info{
+  width: 50%;
+}
+.info h2{
+  margin: 0;
+  padding: 0;
+  color: #424874;
+}
+.info p{
+  margin: 0;
+  padding: 0;
+}
+.info ul{
+  margin: 7px;
+  padding: 0;
+  list-style: none;
+}
+.info strong{
+  color: #424874;
+}
+
+
+#more{
+  width: 75%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 20px;
+}
+#contact-form{
+  width: 60%;
+  border: 1px solid #424874;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#contact-form h2{
+  text-align: center;
+  color: #424874;
+}
+#contact-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact-form div{
+  display: flex;
+  flex-direction: column;
+}
+textarea, input{
+  border: 1px solid #424874;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  font-family: "Old Standard TT";
+}
+form button{
+  background-color: #f9f9f9;
+  border: 1px solid #424874;
+  border-radius: 10px;
+  color: #424874;
+  width: 30%;
+  height: 30px;
+  cursor: pointer;
+}
+.button{
+  display: flex;
+  align-items: center;
+}
+button:hover{
+  color: #A6B1E1;
+  border-color: #A6B1E1;
+}
+label{
+  color: #424874;
+}
+
+#social-media{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #424874;
+}
+#social-media a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+#phone-nav{
+  display: none;
+}
+
+
+@media (max-width: 750px) {
+  #navigation{
+    display: none;
+  }
+  #phone-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  #pnone-nav li{
+    list-style: none;
+    font-size: 13px;
+  }
+  #phone-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  #phone-nav a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  #contact-info img{
+    width: 300px;
+  }
+  .info{
+    width: 100%;
+  }
+
+  #more{
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+  }
+  #contact-form{
+    width: 100%;
+  }
+}

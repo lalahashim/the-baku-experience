@@ -1,0 +1,240 @@
+#navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.logo{
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  font-size: 20px;
+  padding: 0;
+}
+.navigation a{
+  text-decoration: none;
+  color: white;
+}
+.navigation li{
+  list-style: none;
+}
+#logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+#footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 30px auto 0 auto;
+  padding: 0;
+}
+.text-logo{
+  display: flex;
+  align-items: center;
+}
+.social-media{
+  display: flex;
+  gap: 10px;
+}
+
+
+
+body {
+  font-family: "Old Standard TT";
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+section {
+  width: 80%;
+}
+
+#with-bg{
+   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('public/carpet2.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+}
+#head{
+  color: white;
+  margin: 60px auto;
+  padding-bottom: 20px;
+}
+#head h1 {
+  font-size: 30px;
+}
+#head p {
+  font-size: 20px;
+}
+
+
+#tours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+}
+.tour-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 350px;
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.tour-card:hover{
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.tour-card img {
+  width: 100%;
+  height: 200px;
+}
+.tour-card h2 {
+  font-size: 1.3em;
+  margin: 15px 20px 10px;
+  color: #424874;
+}
+.tour-card p {
+  margin: 0 20px 10px;
+}
+.tour-card button {
+  margin: 10px 20px 0;
+  padding: 10px;
+  background: white;
+  color: #424874;
+  border: 1px solid #424874;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.tour-card button:hover {
+  color: #A6B1E1;
+  border-color: #A6B1E1;
+}
+
+
+#reviews {
+  background: #eef6fa;
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+  margin: 50px auto;
+}
+#reviews h2 {
+  margin-bottom: 17px;
+  color: #424874;
+}
+#reviews blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background: white;
+  border-left: 5px solid #A6B1E1;
+  font-style: italic;
+  border-radius: 10px;
+}
+#reviews cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+  color: #424874;
+}
+
+
+#faq {
+  max-width: 800px;
+  margin: 50px auto;
+}
+#faq h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #424874;
+}
+.faq-question {
+  background-color: #424874;
+  color: white;
+  padding: 14px 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+.faq-question:hover {
+  background-color: #A6B1E1;
+}
+.faq-answer {
+  display: none;
+  padding: 15px 20px;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+#phone-nav{
+  display: none;
+}
+
+
+@media (max-width: 750px) {
+  #navigation{
+    display: none;
+  }
+  #phone-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  #pnone-nav li{
+    list-style: none;
+    font-size: 13px;
+  }
+  #phone-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  #phone-nav a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .tours-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tour-card {
+    width: 90%;
+  }
+}
