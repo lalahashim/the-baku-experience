@@ -124,8 +124,7 @@ body{
 }
 #contact-form{
   width: 60%;
-  border: 1px solid #424874;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -221,7 +220,9 @@ label{
     cursor: pointer;
   }
 
-
+  #contact-info ul{ 
+    color: black;
+  }
   #contact-info img{
     width: 300px;
   }
