@@ -174,12 +174,12 @@ section {
   color: #424874;
 }
 .faq-question {
-  background-color: #424874;
-  color: white;
+  background-color: #f9f9f9;
+  color: #424874;
   padding: 14px 20px;
   width: 100%;
   text-align: left;
-  border: none;
+  border: 1px solid #424874;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -188,7 +188,8 @@ section {
   transition: background-color 0.3s;
 }
 .faq-question:hover {
-  background-color: #A6B1E1;
+  border-color: #A6B1E1;
+  color: #A6B1E1;
 }
 .faq-answer {
   display: none;
