@@ -121,19 +121,10 @@ body::before {
     align-items: center;
     width: 90%;
   }
-  #pnone-nav li{
-    list-style: none;
-    font-size: 13px;
-  }
   #phone-nav ul{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-  }
-  #phone-nav a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
   }
 
   #main-content{
